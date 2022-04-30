@@ -3,7 +3,12 @@ var Schema = mongoose.Schema;
 
 var ususarioSchemaJSON = {
     nombre: String,
-    autobus: Boolean
+    email: String,
+    asistencia: Boolean,
+    acompañante: String,
+    autobus: Boolean,
+    alergias: String,
+    datos: String
 }
 
 var usuarioSchema = new Schema(ususarioSchemaJSON)

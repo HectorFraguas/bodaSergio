@@ -28,7 +28,12 @@ router.post('/create', async function (req, res, next) {
   try {
     let usu = new usuario({
       nombre: req.body.nombre,
-      autobus: req.body.autobus
+      email: req.body.email,
+      asistencia: req.body.asistencia,
+      acompañante: req.body.acompañante,
+      autobus: req.body.autobus,
+      alergias: req.body.alergias,
+      datos: req.body.datos
     })
     await usu.save()
     res.json({
@@ -51,7 +56,12 @@ router.post('/update', async function (req, res, next) {
     }, {
       $set: {
         nombre: req.body.nombre,
-        autobus: req.body.autobus
+        email: req.body.email,
+        asistencia: req.body.asistencia,
+        acompañante: req.body.acompañante,
+        autobus: req.body.autobus,
+        alergias: req.body.alergias,
+        datos: req.body.datos
       }
     })
 
