@@ -29,7 +29,7 @@ router.post('/create', async function (req, res, next) {
       nombre: req.body.nombre,
       email: req.body.email,
       asistencia: req.body.asistencia,
-      acompañante: req.body.acompañante,
+      acompanante: req.body.acompanante,
       autobus: req.body.autobus,
       alergias: req.body.alergias,
       datos: req.body.datos
@@ -57,7 +57,7 @@ router.post('/update', async function (req, res, next) {
         nombre: req.body.nombre,
         email: req.body.email,
         asistencia: req.body.asistencia,
-        acompañante: req.body.acompañante,
+        acompanante: req.body.acompanante,
         autobus: req.body.autobus,
         alergias: req.body.alergias,
         datos: req.body.datos

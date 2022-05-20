@@ -5,7 +5,7 @@ var ususarioSchemaJSON = {
     nombre: String,
     email: String,
     asistencia: Boolean,
-    acompañante: String,
+    acompanante: String,
     autobus: Boolean,
     alergias: String,
     datos: String
